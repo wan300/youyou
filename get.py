@@ -75,7 +75,7 @@ def send_email(subject, body):
     """发送邮件通知"""
     # 优先从环境变量读取
     sender_email = os.getenv('SENDER_EMAIL')
-    receiver_email = os.getenv('RECEIVER_EMAIL', '1591799424@qq.com')
+    receiver_email = os.getenv('RECEIVER_EMAIL')
     password = os.getenv('EMAIL_PASSWORD')
 
     # 基本校验，避免在没有配置的情况下尝试发送邮件
